@@ -5,9 +5,13 @@
 #include <engine/core/enginecontrol.h>
 #include <engine/core/double3.h>
 #include <engine/graphics/camera.h>
+#include <engine/physics/physics_world.h>
 
-class FPS : public EngineControl{
+class FPS : public EngineControl, public PhysicsWorld{
 
+protected:
+
+    virtual void OnSetSettings();
 
 public:
 
