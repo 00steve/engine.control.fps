@@ -12,6 +12,8 @@ class FPS : public EngineControl, public PhysicsWorld{
 protected:
 
     virtual void OnSetSettings();
+    virtual Node* Child(Node* newChild);
+    virtual bool HandleMessage(NodeMessage message);
 
 public:
 

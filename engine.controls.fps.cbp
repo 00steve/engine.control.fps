@@ -127,6 +127,7 @@
 		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physics_world.h">
 			<Option target="Release" />
 		</Unit>
+		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physicsgroup.h" />
 		<Unit filename="fps.cpp">
 			<Option target="Release" />
 		</Unit>
