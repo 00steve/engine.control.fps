@@ -28,7 +28,6 @@ bool FPS::HandleMessage(NodeMessage message){
 
 Node* FPS::Child(Node* newChild){
     EngineControl::Child(newChild);
-    cout << " - send message to new child that can register physics stuff\n";
     CreateAndSendMessage(newChild,MESSAGE_REGISTER_PHYSICS_OFFER,NULL);
     return newChild;
 }
