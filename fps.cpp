@@ -13,6 +13,8 @@ void FPS::OnSetSettings(){
     //Settings().Print();
     EngineControl::OnSetSettings();
     PhysicsWorld::PhysicsSettings(Settings());
+
+
 }
 
 
