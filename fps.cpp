@@ -6,6 +6,7 @@ FPS::FPS(){
 }
 
 FPS::~FPS(){
+    cout << "[delete] fps > ";
 }
 
 
