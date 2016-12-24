@@ -8,11 +8,9 @@
 		<Build>
 			<Target title="Release">
 				<Option output="../engine_test/assets/extensions/engine.control.fps.dll" prefix_auto="0" extension_auto="0" />
-				<Option object_output="obj/Release/" />
+				<Option object_output="../engine_test/assets/extensions" />
 				<Option type="3" />
 				<Option compiler="gcc" />
-				<Option createDefFile="1" />
-				<Option createStaticLib="1" />
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
@@ -25,121 +23,26 @@
 			</Target>
 			<Target title="debug">
 				<Option output="../engine_test/assets/extensions/engine.control.fps.dll" prefix_auto="0" extension_auto="0" />
+				<Option object_output="../engine_test/assets/extensions" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 			</Target>
 		</Build>
+		<Compiler>
+			<Add option="-std=c++0x" />
+		</Compiler>
 		<Linker>
-			<Add library="glfw3" />
 			<Add library="gdi32" />
-			<Add library="glew32" />
 			<Add library="opengl32" />
+			<Add library="engine" />
+			<Add library="glfw3" />
 			<Add library="mingw32" />
 			<Add library="ode" />
 		</Linker>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/assetlibrary.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/assetlibrary/dll.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/double3.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/enginecontrol.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/float3x3.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/float3x3.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/list.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/map.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/node.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/node.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/nodemessage.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/nodemessage.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/noderequest.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/stringutil.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/stringutil.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/varmap.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/core/varmap.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/collision.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/ode.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/ode.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/ode_utils.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/ode_utils.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physical.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physics_world.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physics_world.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="C:/Program Files (x86)/CodeBlocks/MinGW/include/engine/physics/physicsgroup.h" />
-		<Unit filename="fps.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="fps.h">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="main.cpp">
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="main.h">
-			<Option target="Release" />
-		</Unit>
+		<Unit filename="fps.cpp" />
+		<Unit filename="fps.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
